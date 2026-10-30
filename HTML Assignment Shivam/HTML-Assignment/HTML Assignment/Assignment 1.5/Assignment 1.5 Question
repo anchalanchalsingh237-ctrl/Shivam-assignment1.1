@@ -1,0 +1,81 @@
+# Assignment 1.4 — Git Essentials I
+
+## Objective
+To convert a local project into a Git repository and learn how to track changes using Git commands.
+
+## Solution
+
+First, I downloaded and installed Git from the official website, https://git-scm.com/. After installing Git, I opened the terminal and verified the installation using the following command:
+
+```bash
+git --version
+```
+
+The command displayed the installed Git version, confirming that Git was installed successfully.
+
+Next, I opened the terminal in my project folder named `web-development-practice` and initialized a new Git repository using the following command:
+
+```bash
+git init
+```
+
+After initializing the repository, I configured my Git username and email address using these commands:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+I replaced the example name and email with my own details.
+
+Then, I created an HTML file named `index.html` inside the project folder and added basic HTML code to it. I used the following commands to check the repository status and track the file:
+
+```bash
+git status
+git add index.html
+git status
+```
+
+After staging the file, I created my first commit using the following command:
+
+```bash
+git commit -m "Initial commit: Add HTML file"
+```
+
+Next, I made some meaningful changes to the HTML file and created a second commit:
+
+```bash
+git add index.html
+git commit -m "Add heading and paragraph to webpage"
+```
+
+Then, I updated the HTML file by adding more content and created a third commit:
+
+```bash
+git add index.html
+git commit -m "Improve webpage content and structure"
+```
+
+Finally, I checked the repository status and viewed the commit history using the following commands:
+
+```bash
+git status
+git log --oneline
+```
+
+The `git status` command showed the current state of the working directory, and the `git log --oneline` command displayed the history of the three commits.
+
+## Result
+
+The local project was successfully converted into a Git repository. Git was installed and configured, an HTML file was created, and changes were tracked using `git add` and `git commit`. Three meaningful commits were created, and the commit history was verified using `git log --oneline`.
+
+## Conclusion
+
+This assignment helped me understand the basics of Git, including repository initialization, user configuration, tracking file changes, creating commits, checking repository status, and viewing commit history.
+
+## Screenshots to Attach
+
+1. **Git Version Screenshot:** Show the output of the `git --version` command.
+2. **Repository Folder Screenshot:** Show the project folder containing `index.html` and the hidden `.git` folder. Enable hidden items in File Explorer if necessary.
+3. **Commit History Screenshot:** Show the output of the `git log --oneline` command displaying at least three commits.
+4. **Git Status Screenshot:** Show the output of the `git status` command after committing the changes.

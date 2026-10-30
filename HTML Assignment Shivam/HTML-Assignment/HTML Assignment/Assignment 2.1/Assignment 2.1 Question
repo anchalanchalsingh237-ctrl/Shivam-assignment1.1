@@ -1,0 +1,37 @@
+# Assignment 1.4 — Git Essentials I
+
+## Objective
+To convert a local project into a Git repository and learn how to track changes using Git commands.
+
+## Solution
+
+First, I downloaded and installed Git from the official website, https://git-scm.com/. After installing Git, I verified the installation by running the `git --version` command in the terminal.
+
+Next, I opened the terminal in my project folder named `web-development-practice` and initialized a new Git repository using the `git init` command.
+
+After initializing the repository, I configured my Git username and email address using the `git config` commands.
+
+Then, I created an HTML file named `index.html` inside the project folder and added basic HTML code to it. I used the `git status` command to check the repository status and the `git add` command to stage the file.
+
+After staging the file, I created my first commit with the message "Initial commit: Add HTML file".
+
+Next, I modified the HTML file by adding a heading and paragraph, staged the changes, and created my second commit with the message "Add heading and paragraph to webpage".
+
+Then, I updated the HTML file by adding more content and improving its structure. I staged the changes and created my third commit with the message "Improve webpage content and structure".
+
+Finally, I used the `git status` command to check the current state of the repository and the `git log --oneline` command to view the history of the three commits.
+
+## Result
+
+The local project was converted into a Git repository successfully. Git was installed and configured, an HTML file was created, and changes were tracked using Git commands. Three meaningful commits were created, and the commit history was verified.
+
+## Conclusion
+
+This assignment helped me understand the basics of Git, including repository initialization, user configuration, tracking file changes, creating commits, checking repository status, and viewing commit history.
+
+## Screenshots to Attach
+
+1. Git version screenshot showing the output of `git --version`.
+2. Repository folder screenshot showing `index.html` and the hidden `.git` folder.
+3. Commit history screenshot showing at least three commits using `git log --oneline`.
+4. Git status screenshot showing the output of `git status` after committing the changes.

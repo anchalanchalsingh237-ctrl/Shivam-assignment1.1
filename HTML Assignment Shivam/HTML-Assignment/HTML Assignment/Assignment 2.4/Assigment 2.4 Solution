@@ -1,0 +1,104 @@
+# Assignment 2.4 — HTML Validation & Debugging
+
+## Objective
+
+To identify and fix errors in an HTML file, inspect the page using browser Developer Tools, validate the HTML markup, and organize the corrected code with proper indentation.
+
+## Solution
+
+First, I created a sample HTML file containing intentional errors such as missing closing tags, incorrect nesting of elements, missing attributes, and improper indentation.
+
+Next, I opened the HTML file in a web browser and used Developer Tools by pressing F12. In the Elements panel, I inspected the HTML structure and identified problems with the markup. I also checked the browser console for any related warnings or errors.
+
+Then, I used the W3C Markup Validation Service (https://validator.w3.org/) to validate the HTML code and identify markup errors.
+
+After identifying the errors, I corrected the missing closing tags, fixed the incorrect nesting of elements, added the required attributes, and organized the code using proper indentation. Finally, I reopened the corrected HTML file in the browser and verified that the webpage displayed correctly.
+
+## 1. Before: Buggy HTML Code
+
+The following HTML code contains intentional errors for debugging practice.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage
+</head>
+<body>
+    <h1>Welcome to My Website
+    <p>This is my first paragraph.
+    <div>
+        <p>This is some content.
+    </p></div>
+    <img src="photo.jpg">
+    <a href="https://example.com">Visit Website
+</body>
+</html>
+```
+
+## 2. Errors Identified
+
+The following errors were identified in the original HTML code:
+
+1. **Missing closing title tag:** The `title` element was not properly closed before the `head` element ended.
+2. **Missing closing heading tag:** The `h1` element did not have a closing `h1` tag.
+3. **Missing closing paragraph tag:** The first `p` element was not explicitly closed.
+4. **Incorrect nesting:** The paragraph and `div` elements were arranged in a confusing and improperly nested structure.
+5. **Missing image alt attribute:** The `img` element did not include an `alt` attribute describing the image.
+6. **Missing closing anchor tag:** The `a` element was not properly closed.
+7. **Poor indentation:** The code was not consistently indented, making it harder to read and debug.
+8. **Missing language and character encoding declarations:** The HTML document did not specify the page language or character encoding.
+
+## 3. After: Corrected HTML Code
+
+The following code fixes the identified problems and uses proper indentation.
+
+Save this code as `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+</head>
+<body>
+    <!-- Main heading -->
+    <h1>Welcome to My Website</h1>
+
+    <!-- First paragraph -->
+    <p>This is my first paragraph.</p>
+
+    <!-- Content section -->
+    <div>
+        <p>This is some content.</p>
+    </div>
+
+    <!-- Image with alternative text -->
+    <img src="photo.jpg" alt="A sample photograph">
+
+    <!-- External link -->
+    <p>
+        <a href="https://example.com">Visit Website</a>
+    </p>
+</body>
+</html>
+```
+
+**Note:** If you want the image to appear in the browser, place an image named `photo.jpg` in the same folder as `index.html`. Otherwise, replace the image filename with the path to an existing image.
+
+## 4. Inspecting HTML Using Browser DevTools
+
+I followed these steps to inspect the webpage:
+
+1. Opened `index.html` in Google Chrome.
+2. Pressed F12 to open Developer Tools.
+3. Selected the Elements panel.
+4. Inspected the HTML elements and their nesting.
+5. Compared the original code with the corrected structure.
+6. Verified that the heading, paragraphs, image element, and link were present.
+
+The Elements panel displays the browser's parsed DOM structure. Because browsers automatically repair some HTML errors, the Elements panel may not show the original source exactly as written.
+
+## 5. Validating HTML Mark

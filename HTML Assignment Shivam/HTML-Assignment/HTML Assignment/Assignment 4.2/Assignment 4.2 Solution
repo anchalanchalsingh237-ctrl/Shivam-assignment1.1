@@ -1,0 +1,348 @@
+
+# Assignment 4.2 — Job Application Form
+
+## 1. Objective
+
+To create a job application form using different HTML input types. The form includes personal details, date of birth, portfolio URL, radio buttons, checkboxes, a dropdown menu, a cover letter textarea, a disabled field, and a submit button.
+
+## 2. HTML Code (job-application.html)
+
+Create a file named `job-application.html` and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Please complete the form below to apply for a job position.</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}"
+                        title="Enter a 10-digit phone number"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Job Details</legend>
+
+                <div>
+                    <label for="portfolio">Portfolio URL:</label>
+                    <input
+                        type="url"
+                        id="portfolio"
+                        name="portfolio"
+                        placeholder="https://example.com">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="jobRole">Select Job Role:</label>
+                    <select id="jobRole" name="jobRole" required>
+                        <option value="">-- Select a job role --</option>
+                        <option value="web-developer">Web Developer</option>
+                        <option value="frontend-developer">Frontend Developer</option>
+                        <option value="backend-developer">Backend Developer</option>
+                        <option value="ui-ux-designer">UI/UX Designer</option>
+                        <option value="software-tester">Software Tester</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="qualification">Highest Qualification:</label>
+                    <select id="qualification" name="qualification" required>
+                        <option value="">-- Select qualification --</option>
+                        <option value="high-school">High School</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="applicationId">Application ID:</label>
+                    <input
+                        type="text"
+                        id="applicationId"
+                        name="applicationId"
+                        value="Assigned by HR"
+                        disabled>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Preferred Shift</legend>
+
+                <p>Select your preferred work shift:</p>
+
+                <input
+                    type="radio"
+                    id="morning"
+                    name="preferredShift"
+                    value="morning"
+                    required>
+                <label for="morning">Morning</label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="evening"
+                    name="preferredShift"
+                    value="evening">
+                <label for="evening">Evening</label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="night"
+                    name="preferredShift"
+                    value="night">
+                <label for="night">Night</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Technical Skills</legend>
+
+                <p>Select the skills you have:</p>
+
+                <input
+                    type="checkbox"
+                    id="html"
+                    name="skills"
+                    value="HTML">
+                <label for="html">HTML</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="css"
+                    name="skills"
+                    value="CSS">
+                <label for="css">CSS</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="javascript"
+                    name="skills"
+                    value="JavaScript">
+                <label for="javascript">JavaScript</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="python"
+                    name="skills"
+                    value="Python">
+                <label for="python">Python</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="git"
+                    name="skills"
+                    value="Git">
+                <label for="git">Git and GitHub</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Cover Letter</legend>
+
+                <div>
+                    <label for="coverLetter">Write Your Cover Letter:</label>
+                    <br>
+                    <textarea
+                        id="coverLetter"
+                        name="coverLetter"
+                        rows="6"
+                        cols="50"
+                        placeholder="Explain why you are suitable for this job..."
+                        required></textarea>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Job Application Form. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 3. Explanation of HTML Input Types
+
+1. `type="text"`: Accepts the applicant's full name.
+2. `type="email"`: Accepts an email address and checks its basic format.
+3. `type="tel"`: Accepts the applicant's phone number.
+4. `type="date"`: Allows the applicant to select a date of birth.
+5. `type="url"`: Accepts a portfolio website URL.
+6. `type="radio"`: Allows the applicant to select one preferred shift.
+7. `type="checkbox"`: Allows the applicant to select multiple skills.
+8. `<select>`: Provides dropdown options for job role and qualification.
+9. `<textarea>`: Allows the applicant to enter a longer cover letter.
+10. `disabled`: Displays a field that cannot be edited or submitted as form data.
+11. `required`: Ensures that specified fields are completed before normal form submission.
+12. `<fieldset>` and `<legend>`: Group related form fields under meaningful headings.
+13. `<button type="submit">`: Submits the form.
+14. `<button type="reset">`: Resets the form fields to their initial values.
+
+## 4. Important Rules Followed
+
+- Every input field has a corresponding `<label>`.
+- Each input has a unique `id`.
+- Each field has a meaningful `name`.
+- Required fields use the `required` attribute.
+- Radio buttons share the same name, `preferredShift`, so only one shift can be selected.
+- Skill checkboxes share the name `skills`, allowing multiple selections.
+- The Application ID field uses `disabled` as an example of a non-editable field.
+- The phone field uses a pattern that accepts exactly 10 digits.
+- The portfolio field uses the URL input type.
+- The cover letter uses a `<textarea>` element.
+
+## 5. How to Run and Test
+
+1. Open Visual Studio Code.
+2. Create a folder named `job-application`.
+3. Create a file named `job-application.html`.
+4. Copy the HTML code into the file.
+5. Save the file.
+6. Open it in a web browser or use the Live Server extension.
+7. Enter sample applicant details.
+8. Select a preferred shift using the radio buttons.
+9. Select multiple technical skills using the checkboxes.
+10. Choose a job role and qualification from the dropdown menus.
+11. Enter a portfolio URL and a cover letter.
+12. Click Submit Application to test required-field validation.
+13. Click Reset Form to test the reset button.
+14. Take a screenshot showing the form for submission.
+
+## 6. Expected Result
+
+The webpage should display:
+
+- A Job Application Form heading.
+- Personal information fields for name, email, phone, and date of birth.
+- A portfolio URL field.
+- Dropdowns for job role and qualification.
+- Radio buttons for preferred shift.
+- Checkboxes for technical skills.
+- A disabled Application ID field.
+- A cover letter text area.
+- Submit Application and Reset Form buttons.
+- A footer with copyright information.
+
+## 7. Submission Checklist
+
+- [ ] `job-application.html` file created.
+- [ ] Full name, email, and phone fields included.
+- [ ] Date of birth input added.
+- [ ] Portfolio URL input added.
+- [ ] Radio buttons use the same name.
+- [ ] Skills checkboxes included.
+- [ ] Job role or qualification dropdown added.
+- [ ] Cover letter textarea added.
+- [ ] Disabled field included.
+- [ ] Every field has a label.
+- [ ] Required attributes added where appropriate.
+- [ ] Submit button included.
+- [ ] Form tested in the browser.
+- [ ] Screenshot captured.
+- [ ] HTML file and screenshot ready for submission.
+
+## 8. Important Note
+
+This is a front-end HTML form for practice. The `action="#"` attribute does not send applications to a real employer or store the applicant's information. A server-side backend is needed to process and save real applications.
+
+## Conclusion
+
+This assignment demonstrates how to build a job application form using different HTML input types. It covers labels, text fields, email and telephone inputs, date and URL inputs, radio buttons, checkboxes, dropdowns, textareas, disabled fields, and browser validation.
+```
+
+**Before submitting:** Save the file as `job-application.html`, open it in your browser, test the fields and buttons, and capture a screenshot of the working form.

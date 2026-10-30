@@ -1,0 +1,134 @@
+
+# Assignment 3.2 — Images in HTML
+
+## 1. Objective
+To add an images section to a portfolio webpage using the HTML `<img>` tag, correct image paths, meaningful `alt` text, and appropriate image dimensions.
+
+## 2. Project Folder Structure
+
+Create a project folder named `portfolio` with the following structure:
+
+portfolio/
+│
+├── index.html
+└── images/
+    ├── profile.jpg
+    ├── coding.jpg
+    └── project.jpg
+
+Place at least three image files inside the `images` folder. You can use your own images and rename them to match the filenames above.
+
+## 3. HTML Code (index.html)
+
+Create an `index.html` file and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Images</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal portfolio website.</p>
+    </header>
+
+    <hr>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a web development student learning HTML and CSS.</p>
+    </section>
+
+    <hr>
+
+    <section id="images">
+        <h2>My Images</h2>
+
+        <div>
+            <h3>My Profile</h3>
+            <img
+                src="images/profile.jpg"
+                alt="My personal profile photograph"
+                width="300"
+                height="200">
+        </div>
+
+        <div>
+            <h3>Coding Practice</h3>
+            <img
+                src="images/coding.jpg"
+                alt="A computer screen displaying programming code"
+                width="300"
+                height="200">
+        </div>
+
+        <div>
+            <h3>My Project</h3>
+            <img
+                src="images/project.jpg"
+                alt="A screenshot or photograph of my web development project"
+                width="300"
+                height="200">
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 4. Explanation
+
+- `src`: Specifies the location of the image file.
+- `alt`: Provides meaningful alternative text if the image cannot load and helps screen-reader users understand the image.
+- `width`: Sets the displayed image width.
+- `height`: Sets the displayed image height.
+- `images/`: The folder containing the three image files.
+- `<section>`: Organizes the images into a separate section of the portfolio.
+
+## 5. How to Run and Test
+
+1. Create the `portfolio` folder.
+2. Create an `images` folder inside it.
+3. Add three images and name them `profile.jpg`, `coding.jpg`, and `project.jpg`.
+4. Save the HTML code as `index.html` in the `portfolio` folder.
+5. Open `index.html` in your browser, or use Live Server in VS Code.
+6. Check that all three images load correctly.
+7. If an image does not appear, verify its filename, file extension, and path.
+
+Important: The filenames and extensions in your HTML must match your actual image files. If your image is named `profile.png`, change the path to `images/profile.png`.
+
+## 6. Expected Result
+
+Your portfolio webpage should display:
+
+- A heading titled My Portfolio.
+- An About Me section.
+- A My Images section containing three images.
+- A meaningful heading and alternative text for each image.
+- A footer at the bottom of the page.
+
+## 7. Submission Checklist
+
+- [ ] `index.html` file created.
+- [ ] `images` folder created.
+- [ ] At least three images added.
+- [ ] Correct `src` paths used.
+- [ ] Meaningful `alt` text provided for every image.
+- [ ] `width` and `height` attributes added.
+- [ ] All images tested in the browser.
+- [ ] Portfolio page and `images` folder included in the submission.
+
+## Conclusion
+
+This assignment demonstrates how to insert images into an HTML webpage using the `<img>` tag, organize image files in a separate folder, and improve accessibility with meaningful alternative text.

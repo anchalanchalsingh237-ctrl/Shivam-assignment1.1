@@ -1,0 +1,63 @@
+# Assignment 2.1 — First HTML Page
+
+## Objective
+To create a basic HTML webpage using HTML elements, headings, comments, and proper indentation.
+
+## Solution
+
+First, I created a file named `index.html` in Visual Studio Code. I used the `<!DOCTYPE html>` declaration to define the document as HTML5. Then, I added the `html`, `head`, and `body` elements to structure the webpage.
+
+I set the page title to **My First Webpage** using the `title` element inside the `head` section. In the `body` section, I added one main heading using the `h1` element and four subheadings using the `h2` element. I also added paragraphs to provide information under each heading.
+
+I used HTML comments to describe the different sections of the code and maintained proper indentation to make the code easy to read and understand. Finally, I saved the file and opened it in a web browser to verify that the webpage displayed correctly.
+
+## HTML Code
+
+Save the following code in a file named `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>My First Webpage</title>
+</head>
+<body>
+
+    <!-- Main heading -->
+    <h1>Welcome to My First Webpage</h1>
+
+    <!-- First subheading -->
+    <h2>About Me</h2>
+    <p>Hello! I am learning HTML and web development.</p>
+
+    <!-- Second subheading -->
+    <h2>My Education</h2>
+    <p>I am learning how to create webpages using HTML.</p>
+
+    <!-- Third subheading -->
+    <h2>My Hobbies</h2>
+    <p>My hobbies include reading, listening to music, and learning new skills.</p>
+
+    <!-- Fourth subheading -->
+    <h2>My Goals</h2>
+    <p>My goal is to become a skilled web developer.</p>
+
+</body>
+</html>
+```
+
+## Result
+
+The HTML webpage was created successfully. The browser displayed the page title as "My First Webpage" and showed one main heading, four subheadings, and their respective paragraphs.
+
+## Conclusion
+
+This assignment helped me understand the basic structure of an HTML document and the use of headings, paragraphs, comments, and the title element. I also learned how to save an HTML file and open it in a web browser.
+
+## Screenshot to Attach
+
+Capture a screenshot of the webpage opened in your browser, showing the main heading, subheadings, and paragraphs. Also submit the `index.html` file.

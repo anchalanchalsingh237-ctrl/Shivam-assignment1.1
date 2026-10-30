@@ -1,0 +1,416 @@
+
+# Assignment 3.5 — Blog / Portfolio Mini-Project
+
+## 1. Objective
+
+To create a personal portfolio website using HTML. The website includes a header, navigation bar, About Me section, skills, projects, images, useful links, and a footer with contact details. Semantic HTML elements are used to improve structure and accessibility.
+
+## 2. Project Folder Structure
+
+Create a folder named `portfolio-project` with the following structure:
+
+portfolio-project/
+│
+├── index.html
+├── about.html
+├── projects.html
+└── images/
+    ├── profile.jpg
+    ├── project1.jpg
+    └── project2.jpg
+
+Add your own images to the `images` folder using the filenames shown above.
+
+## 3. Home Page Code (index.html)
+
+Create a file named `index.html` and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+</head>
+<body>
+
+    <header>
+        <h1>Anchal's Portfolio</h1>
+        <p>Web Development Student | Learner | Creative Thinker</p>
+    </header>
+
+    <hr>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="welcome">
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+                Hello! Welcome to my personal portfolio website.
+                Here you can learn about me, explore my skills,
+                and view my projects.
+            </p>
+
+            <img
+                src="images/profile.jpg"
+                alt="Profile photograph of Anchal"
+                width="250"
+                height="250">
+        </section>
+
+        <hr>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Anchal. I am a student interested in
+                web development and technology. I enjoy learning
+                new skills and creating simple, useful websites.
+            </p>
+            <p>
+                My goal is to improve my programming knowledge
+                and build creative projects using modern web technologies.
+            </p>
+            <p><a href="about.html">Read More About Me</a></p>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>My Skills and Interests</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+                <li>Web Design</li>
+                <li>Learning New Technologies</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="featured-projects">
+            <h2>Featured Projects</h2>
+
+            <article>
+                <h3>Project 1: Personal Portfolio</h3>
+                <img
+                    src="images/project1.jpg"
+                    alt="Preview of my personal portfolio webpage"
+                    width="300"
+                    height="200">
+                <p>
+                    A personal website created using HTML to display
+                    my information, skills, and projects.
+                </p>
+            </article>
+
+            <article>
+                <h3>Project 2: Simple Blog</h3>
+                <img
+                    src="images/project2.jpg"
+                    alt="Preview of a simple blog webpage"
+                    width="300"
+                    height="200">
+                <p>
+                    A basic blog webpage containing articles,
+                    headings, paragraphs, and useful links.
+                </p>
+            </article>
+
+            <p><a href="projects.html">View All Projects</a></p>
+        </section>
+
+        <hr>
+
+        <section id="useful-links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        MDN Web Docs
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        W3Schools
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: your-email@example.com</p>
+            <p>
+                You can contact me for questions, collaboration,
+                or discussions about web development.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Anchal's Portfolio. All rights reserved.</p>
+        <p>Created using HTML.</p>
+        <p><a href="mailto:your-email@example.com">Send Me an Email</a></p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 4. About Page Code (about.html)
+
+Create a file named `about.html` and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | My Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <p>Learn more about my background and interests.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>My Introduction</h2>
+            <p>
+                Hello! My name is Anchal. I am learning web development
+                and enjoy creating websites using HTML and other technologies.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Goals</h2>
+            <ul>
+                <li>Improve my HTML and CSS skills.</li>
+                <li>Learn JavaScript programming.</li>
+                <li>Create useful and responsive websites.</li>
+                <li>Build a strong portfolio of projects.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>My Interests</h2>
+            <p>
+                I am interested in technology, website design,
+                programming, and continuous learning.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Anchal's Portfolio.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 5. Projects Page Code (projects.html)
+
+Create a file named `projects.html` and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | My Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Projects</h1>
+        <p>A collection of my learning projects.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Personal Portfolio Website</h2>
+            <img
+                src="images/project1.jpg"
+                alt="Screenshot of my personal portfolio website"
+                width="300"
+                height="200">
+            <p>
+                This project displays personal information, skills,
+                interests, and contact details using HTML.
+            </p>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>HTML</li>
+                <li>Semantic Elements</li>
+                <li>Links and Images</li>
+            </ul>
+        </article>
+
+        <hr>
+
+        <article>
+            <h2>Simple Blog Website</h2>
+            <img
+                src="images/project2.jpg"
+                alt="Screenshot of my simple blog website"
+                width="300"
+                height="200">
+            <p>
+                This project demonstrates how to organize blog content
+                with headings, paragraphs, images, and links.
+            </p>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>HTML</li>
+                <li>Lists</li>
+                <li>Images and Hyperlinks</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Anchal's Portfolio.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 6. Explanation of Important HTML Elements
+
+1. `<header>`: Displays the website title and introductory text.
+2. `<nav>`: Contains navigation links to different pages or sections.
+3. `<main>`: Contains the main content of the webpage.
+4. `<section>`: Groups related content, such as About Me and Skills.
+5. `<article>`: Displays individual projects independently.
+6. `<img>`: Displays images on the webpage.
+7. `alt`: Provides meaningful alternative text for images.
+8. `<ul>` and `<li>`: Display skills, interests, and technologies as lists.
+9. `<a>`: Creates links to other pages, external resources, and email addresses.
+10. `<footer>`: Displays copyright and contact information.
+
+## 7. How to Run the Project
+
+1. Open Visual Studio Code.
+2. Create a folder named `portfolio-project`.
+3. Create three HTML files: `index.html`, `about.html`, and `projects.html`.
+4. Create a folder named `images`.
+5. Add three images named `profile.jpg`, `project1.jpg`, and `project2.jpg`.
+6. Copy the appropriate HTML code into each file.
+7. Replace the sample email address with your own email address.
+8. Save all files.
+9. Open `index.html` in a browser or use the Live Server extension.
+10. Click the navigation links and verify that the pages and sections open correctly.
+11. Check that all images load properly.
+
+Important: The image filenames in the HTML code must match the actual filenames in the `images` folder. Replace the sample text and images with your own information before submission.
+
+## 8. Testing Checklist
+
+- [ ] Home page opens correctly.
+- [ ] About Me page opens correctly.
+- [ ] Projects page opens correctly.
+- [ ] Navigation links work.
+- [ ] Skills and interests display as lists.
+- [ ] All images load properly.
+- [ ] Each image has meaningful alt text.
+- [ ] Useful external links open correctly.
+- [ ] Email link works.
+- [ ] HTML code is properly indented.
+- [ ] All files are saved in the correct folders.
+
+## 9. Upload the Project to GitHub
+
+Open the terminal in the `portfolio-project` folder and run the following commands:
+
+```bash
+git init
+git add .
+git commit -m "Create personal portfolio website"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/portfolio-project.git
+git push -u origin main
+```
+
+Replace `YOUR-USERNAME` with your GitHub username. Create an empty repository named `portfolio-project` on GitHub before running the remote and push commands.
+
+After uploading, copy the URL of your repository for submission.
+
+Example repository URL:
+https://github.com/YOUR-USERNAME/portfolio-project
+
+## 10. Submission Checklist
+
+- [ ] `index.html` included.
+- [ ] `about.html` included.
+- [ ] `projects.html` included.
+- [ ] `images` folder included.
+- [ ] Images display correctly.
+- [ ] Navigation links work.
+- [ ] Semantic HTML elements are used.
+- [ ] Lists, images, and useful links are included.
+- [ ] Contact details added.
+- [ ] Source code uploaded to GitHub.
+- [ ] GitHub repository link copied for submission.
+- [ ] Browser screenshot captured.
+
+## Conclusion
+
+This mini-project demonstrates how to create a personal portfolio website using HTML. It includes semantic HTML elements, navigation links, images, lists, project descriptions, useful external resources, and contact details. The project can be extended with CSS for styling and JavaScript for interactivity in future assignments.
+```
+
+**Before submitting:** Replace the sample name, email address, and project descriptions with your own information. Add the actual image files to the `images` folder and verify that every link works.

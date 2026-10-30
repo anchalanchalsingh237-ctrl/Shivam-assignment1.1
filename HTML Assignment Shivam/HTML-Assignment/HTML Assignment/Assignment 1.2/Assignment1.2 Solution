@@ -1,0 +1,16 @@
+First, I installed Visual Studio Code from the official website (https://code.visualstudio.com/). Next, I downloaded and installed the LTS version of Node.js from https://nodejs.org/. After installing the software, I opened Visual Studio Code and installed the Live Server and Prettier extensions from the Extensions Marketplace.
+
+Then, I created a folder named web-development-practice on my computer and opened it in Visual Studio Code. Inside the folder, I created three files: index.html, style.css, and script.js.
+
+I added HTML code to index.html to create the structure of a webpage, CSS code to style.css to style the webpage, and JavaScript code to script.js to add interactivity.
+
+After saving all the files, I opened the VS Code terminal by selecting Terminal → New Terminal and ran the following commands to verify the installation of Node.js and npm.
+node -v
+npm -v
+
+
+Both commands displayed version numbers, confirming that Node.js and npm were installed successfully.
+
+Finally, I opened index.html in Visual Studio Code, right-clicked inside the editor, and selected Open with Live Server. The webpage opened in the browser, displaying the heading, paragraphs, and button. I clicked the button to verify that the JavaScript code was working correctly.
+Result
+The web development environment was successfully set up. Visual Studio Code, Node.js, Live Server, and Prettier were installed. The project folder and all three files were created, the Node.js and npm versions were verified, and the HTML page was successfully opened in the browser using Live Server.

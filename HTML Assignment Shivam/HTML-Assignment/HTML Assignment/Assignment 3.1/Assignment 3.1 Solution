@@ -1,0 +1,196 @@
+# Assignment 3.1 — Two-Page Website with Working Links
+
+## Objective
+
+To create a simple two-page website using HTML and connect the pages with working navigation links. The website will contain Home and About pages, along with an external website link that opens in a new tab.
+
+## Solution
+
+First, I opened Visual Studio Code and created a project folder named `two-page-website`. Inside the folder, I created two HTML files named `index.html` and `about.html`.
+
+In the `index.html` file, I added the website name, an introduction, and a navigation bar containing Home and About links. I used the anchor (`a`) element with the `href` attribute to connect the two pages.
+
+In the `about.html` file, I added information about the website and created the same navigation bar so that users could move between the Home and About pages.
+
+I also added an external link to Google using `target="_blank"` to open it in a new tab. For security, I used `rel="noopener noreferrer"` with the external link.
+
+Finally, I saved both files and opened `index.html` in a web browser. I tested the Home and About navigation links and verified that the external link opened in a new tab.
+
+## 1. Home Page — index.html
+
+Create a file named `index.html` and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Home</title>
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my first two-page website!</p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Home Page</h2>
+        <p>
+            Welcome to my website. This website is created using HTML.
+            It contains two pages connected through navigation links.
+        </p>
+
+        <p>
+            You can visit the About page to learn more about this website.
+        </p>
+
+        <!-- External Website Link -->
+        <p>
+            Visit
+            <a href="https://www.google.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Google
+            </a>
+            to explore the internet.
+        </p>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 2. About Page — about.html
+
+Create another file named `about.html` in the same folder and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - About</title>
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>My Website</h1>
+        <p>Learn more about this website.</p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <h2>About Us</h2>
+
+        <p>
+            This website is a beginner-level HTML project.
+            It demonstrates how to create multiple web pages
+            and connect them using navigation links.
+        </p>
+
+        <h3>Purpose of This Website</h3>
+
+        <p>
+            The purpose of this project is to learn about HTML
+            document structure, hyperlinks, navigation, and
+            external website links.
+        </p>
+
+        <p>
+            Click the Home link above to return to the home page.
+        </p>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 3. Project Folder Structure
+
+The project folder should contain both HTML files:
+
+```text
+two-page-website/
+|
+|-- index.html
+|
+|-- about.html
+```
+
+Both files must be in the same folder so that the relative navigation links work correctly.
+
+## 4. How to Run and Test the Website
+
+1. Open Visual Studio Code.
+2. Open the `two-page-website` folder.
+3. Create and save both `index.html` and `about.html`.
+4. Open `index.html` using Live Server or directly in your browser.
+5. Click the **About** link to open the About page.
+6. Click the **Home** link to return to the home page.
+7. Click the **Google** link and verify that it opens in a new browser tab.
+
+## 5. Explanation of Important HTML Elements
+
+- **`a` element:** Creates a hyperlink to another webpage or website.
+- **`href` attribute:** Specifies the destination of a link.
+- **`target="_blank"`:** Opens the external link in a new tab or window.
+- **`rel="noopener noreferrer"`:** Prevents the opened page from accessing the original page through `window.opener` and restricts referrer information.
+- **`nav` element:** Groups the navigation links.
+- **`header` element:** Contains the website heading and introduction.
+- **`main` element:** Contains the main content of the page.
+- **`footer` element:** Contains the footer information.
+
+## Result
+
+A two-page website was created successfully using HTML. The Home and About pages are connected through working navigation links, and an external link to Google opens in a new tab with the appropriate security attributes.
+
+## Conclusion
+
+This assignment helped me understand how to create multiple HTML pages and connect them using hyperlinks. I learned how to use the `a` element, `href`, `target`, and `rel` attributes, as well as how to organize a webpage using semantic HTML elements.
+
+## Submission
+
+1. The `index.html` file.
+2. The `about.html` file.
+3. A screenshot of the Home page in the browser.
+4. A screenshot of the About page in the browser, demonstrating that the navigation works.

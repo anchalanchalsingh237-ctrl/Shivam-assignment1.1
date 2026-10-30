@@ -1,0 +1,249 @@
+
+# Assignment 3.3 — Ordered, Unordered & Nested Lists
+
+## 1. Objective
+
+To create a webpage containing information about a college or course using unordered lists, ordered lists, nested lists, and description lists in HTML.
+
+## 2. HTML Code (college-info.html)
+
+Create a file named `college-info.html` and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Information</title>
+</head>
+<body>
+
+    <header>
+        <h1>ABC College of Technology</h1>
+        <p>Welcome to ABC College of Technology, where students learn technical skills and prepare for successful careers.</p>
+    </header>
+
+    <hr>
+
+    <section id="introduction">
+        <h2>About Our College</h2>
+        <p>
+            ABC College of Technology provides quality education in computer science,
+            information technology, business, and other technical fields.
+            Our goal is to develop knowledge, practical skills, and professional abilities.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="departments">
+        <h2>Departments and Subjects</h2>
+        <ul>
+            <li>Computer Science
+                <ul>
+                    <li>Programming</li>
+                    <li>Web Development</li>
+                    <li>Database Management</li>
+                </ul>
+            </li>
+            <li>Information Technology</li>
+            <li>Business Administration</li>
+            <li>Electronics Engineering</li>
+            <li>Mechanical Engineering</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="admission">
+        <h2>Admission Process</h2>
+        <ol>
+            <li>Visit the college website or admission office.</li>
+            <li>Choose your preferred course.</li>
+            <li>Fill out the admission application form.</li>
+            <li>Submit the required documents.</li>
+            <li>Complete the entrance examination or eligibility process, if required.</li>
+            <li>Pay the admission fees after selection.</li>
+            <li>Receive confirmation of admission.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section id="course-topics">
+        <h2>Topics Covered in Web Development</h2>
+        <ul>
+            <li>HTML
+                <ol>
+                    <li>HTML Document Structure</li>
+                    <li>Headings and Paragraphs</li>
+                    <li>Links and Images</li>
+                    <li>Lists and Tables</li>
+                </ol>
+            </li>
+            <li>CSS
+                <ol>
+                    <li>Selectors</li>
+                    <li>Colors and Backgrounds</li>
+                    <li>Box Model</li>
+                    <li>Layouts</li>
+                </ol>
+            </li>
+            <li>JavaScript
+                <ol>
+                    <li>Variables and Data Types</li>
+                    <li>Functions</li>
+                    <li>Events</li>
+                    <li>DOM Manipulation</li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="course-details">
+        <h2>Course Details</h2>
+        <dl>
+            <dt><strong>BCA</strong></dt>
+            <dd>Bachelor of Computer Applications is an undergraduate course focused on computer applications and software development.</dd>
+
+            <dt><strong>B.Tech Computer Science</strong></dt>
+            <dd>This engineering course covers programming, algorithms, databases, operating systems, and computer networks.</dd>
+
+            <dt><strong>Web Development</strong></dt>
+            <dd>This subject teaches students how to create and maintain websites using HTML, CSS, JavaScript, and related technologies.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <section id="teachers">
+        <h2>Teacher Information</h2>
+        <dl>
+            <dt><strong>Computer Science Teacher</strong></dt>
+            <dd>Teaches programming, data structures, and computer fundamentals.</dd>
+
+            <dt><strong>Web Development Teacher</strong></dt>
+            <dd>Teaches HTML, CSS, JavaScript, and website development.</dd>
+
+            <dt><strong>Database Teacher</strong></dt>
+            <dd>Teaches database concepts, SQL, and data management.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 ABC College of Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 3. Explanation of HTML Lists
+
+### Unordered List (`<ul>`)
+
+An unordered list displays items with bullet points. It is useful for listing departments, subjects, or facilities.
+
+Example:
+```html
+<ul>
+    <li>Computer Science</li>
+    <li>Information Technology</li>
+    <li>Business Administration</li>
+</ul>
+```
+
+### Ordered List (`<ol>`)
+
+An ordered list displays items in a numbered sequence. It is useful for describing steps in the admission process.
+
+Example:
+```html
+<ol>
+    <li>Fill out the application form.</li>
+    <li>Submit the documents.</li>
+    <li>Pay the admission fees.</li>
+</ol>
+```
+
+### Nested List
+
+A nested list is a list inside another list. It is useful for organizing subjects and their topics.
+
+Example:
+```html
+<ul>
+    <li>HTML
+        <ol>
+            <li>Headings</li>
+            <li>Paragraphs</li>
+            <li>Images</li>
+        </ol>
+    </li>
+</ul>
+```
+
+### Description List (`<dl>`, `<dt>`, `<dd>`)
+
+- `<dl>` defines a description list.
+- `<dt>` specifies the term or name.
+- `<dd>` provides the description of that term.
+
+Example:
+```html
+<dl>
+    <dt>BCA</dt>
+    <dd>Bachelor of Computer Applications.</dd>
+
+    <dt>Web Development</dt>
+    <dd>Learning how to create and maintain websites.</dd>
+</dl>
+```
+
+## 4. How to Run the Project
+
+1. Open Visual Studio Code.
+2. Create a folder named `college-assignment`.
+3. Inside the folder, create a file named `college-info.html`.
+4. Copy the HTML code into the file.
+5. Save the file.
+6. Open the file in a web browser, or use the Live Server extension.
+7. Check that all headings, lists, and descriptions display correctly.
+8. Take a screenshot of the webpage for submission.
+
+## 5. Expected Result
+
+The webpage will display:
+
+- College introduction
+- Departments and subjects in an unordered list
+- Admission process in a numbered list
+- Course topics in nested lists
+- Course information using a description list
+- Teacher information using a description list
+- A footer with copyright information
+
+## 6. Submission Checklist
+
+- [ ] `college-info.html` file created
+- [ ] College or course introduction included
+- [ ] Departments or subjects listed using `<ul>`
+- [ ] Admission process displayed using `<ol>`
+- [ ] Nested list created for subject topics
+- [ ] `<dl>`, `<dt>`, and `<dd>` used for course or teacher details
+- [ ] Headings and sections organized properly
+- [ ] Webpage tested in the browser
+- [ ] Browser screenshot captured
+- [ ] HTML file and screenshot ready for submission
+
+## Conclusion
+
+This assignment demonstrates how to organize college and course information using HTML lists. Unordered lists display bullet points, ordered lists display numbered steps, nested lists organize related topics, and description lists present terms with their explanations.
+```
+
+**Note:** `ABC College of Technology` is a sample college name. Replace it with your actual college name and update the course or teacher details as needed before submitting.

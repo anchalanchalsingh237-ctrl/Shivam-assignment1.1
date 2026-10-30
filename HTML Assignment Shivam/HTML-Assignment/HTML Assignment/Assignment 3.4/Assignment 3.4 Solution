@@ -1,0 +1,243 @@
+
+# Assignment 3.4 — Semantic HTML & Accessibility
+
+## 1. Objective
+
+To convert a div-based webpage into a semantic HTML webpage using elements such as `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>`. The goal is to improve webpage structure, readability, accessibility, and maintainability.
+
+## 2. Before: Div-Based HTML
+
+The following is an example of a webpage that uses only `<div>` elements for its structure.
+
+Save this code as `before.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <div>
+        <h1>My Portfolio</h1>
+    </div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+        <div>
+            <h2>About Me</h2>
+            <p>Hello! I am a web development student learning HTML and CSS.</p>
+        </div>
+
+        <div>
+            <h2>My Skills</h2>
+            <p>I am learning HTML, CSS, JavaScript, and Git.</p>
+        </div>
+
+        <div>
+            <h3>Useful Resource</h3>
+            <p>Visit the MDN website to learn more about web development.</p>
+            <a href="https://developer.mozilla.org/"
+               target="_blank"
+               rel="noopener noreferrer">MDN Web Docs</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: example@email.com</p>
+    </div>
+
+    <div>
+        <p>Copyright 2026 My Portfolio.</p>
+    </div>
+
+</body>
+</html>
+```
+
+## 3. After: Semantic HTML
+
+Create a file named `index.html` and use the following improved code.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Semantic HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal portfolio website.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a web development student learning HTML and CSS.
+                I enjoy creating webpages and learning new technologies.
+            </p>
+
+            <img
+                src="images/profile.jpg"
+                alt="Profile photograph for my personal portfolio"
+                width="200"
+                height="200">
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <article>
+                <h3>HTML</h3>
+                <p>
+                    HTML helps me create the structure and content of webpages.
+                </p>
+            </article>
+
+            <article>
+                <h3>CSS</h3>
+                <p>
+                    CSS helps me style webpages using colors, spacing, and layouts.
+                </p>
+            </article>
+
+            <article>
+                <h3>JavaScript</h3>
+                <p>
+                    JavaScript helps me add interactivity to webpages.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Useful Resource</h2>
+            <p>
+                Learn more about web development using the MDN Web Docs website.
+            </p>
+            <a href="https://developer.mozilla.org/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit MDN Web Docs
+            </a>
+        </aside>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: example@email.com</p>
+            <p>You can contact me for questions about my projects.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+Note: Create an `images` folder and add your own profile image named `profile.jpg`. If you do not want to include an image, you can remove the `<img>` element.
+
+## 4. Explanation of Semantic HTML Elements
+
+1. `<header>`: Contains the introductory content or heading of the page.
+2. `<nav>`: Contains navigation links to other pages or sections.
+3. `<main>`: Contains the main content of the webpage.
+4. `<section>`: Groups related content into meaningful sections.
+5. `<article>`: Contains independent content, such as an individual skill description.
+6. `<aside>`: Contains related supplementary information, such as useful resources.
+7. `<footer>`: Contains copyright information or other footer content.
+8. `alt`: Provides a meaningful description of an image for screen readers and when the image cannot load.
+
+## 5. Heading Hierarchy
+
+The webpage uses headings in a logical order:
+
+- `<h1>`: My Portfolio
+- `<h2>`: About Me, My Skills, Useful Resource, Contact Me
+- `<h3>`: HTML, CSS, JavaScript
+
+This hierarchy makes the page easier to understand and navigate.
+
+## 6. Accessibility Improvements
+
+- Navigation links are placed inside the `<nav>` element.
+- Main content is placed inside `<main>`.
+- Sections have meaningful headings and unique IDs.
+- The profile image includes descriptive alternative text.
+- Links use understandable text instead of vague labels.
+- The external link uses `rel="noopener noreferrer"` with `target="_blank"`.
+- The document includes a language attribute and a responsive viewport setting.
+
+## 7. How to Run and Test
+
+1. Open Visual Studio Code.
+2. Create a folder named `semantic-html-assignment`.
+3. Create two files: `before.html` and `index.html`.
+4. Copy the div-based code into `before.html`.
+5. Copy the semantic HTML code into `index.html`.
+6. Create an `images` folder and add your profile image if using the image element.
+7. Open both files in your browser using Live Server or by opening them directly.
+8. Compare the structure and content of both webpages.
+9. Test the navigation links by clicking About, Skills, and Contact.
+10. Check that the MDN link opens correctly.
+11. Capture screenshots of the before and after webpages.
+
+You can also inspect the HTML structure using the browser's Developer Tools.
+
+## 8. Expected Result
+
+The before webpage uses generic `<div>` elements to organize its content.
+
+The updated webpage uses semantic elements to create clearly defined areas:
+- Header with the portfolio title
+- Navigation menu with working links
+- Main content with About Me, Skills, and Contact sections
+- Articles for individual skills
+- Aside section for a useful resource
+- Footer with copyright information
+
+The page should be easier to understand, maintain, and navigate with assistive technologies.
+
+## 9. Submission Checklist
+
+- [ ] Original div-based webpage saved as `before.html`
+- [ ] Updated semantic webpage saved as `index.html`
+- [ ] `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>` used where appropriate
+- [ ] Navigation links tested
+- [ ] Main content placed inside `<main>`
+- [ ] Correct heading hierarchy used
+- [ ] Meaningful alt text added to images
+- [ ] Page sections and links checked
+- [ ] Before screenshot captured
+- [ ] After screenshot captured
+- [ ] Updated HTML file and screenshots ready for submission
+
+## Conclusion
+
+This assignment demonstrates how to convert a div-based webpage into a semantic HTML webpage. Semantic elements improve document structure, readability, accessibility, and maintainability. Meaningful headings, descriptive links, and image alternative text help make the webpage more accessible to a wider range of users.
+```
+
+**Important:** Use your own profile image and update the sample email address before submitting. Take one screenshot of the original `before.html` page and another of the updated `index.html` page to demonstrate the changes.

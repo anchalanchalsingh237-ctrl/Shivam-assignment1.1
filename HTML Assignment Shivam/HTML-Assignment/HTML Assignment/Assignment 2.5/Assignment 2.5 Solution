@@ -1,0 +1,181 @@
+# Assignment 2.5 — HTML Foundations Mini-Project
+
+## Objective
+
+To build a complete personal introduction webpage using only HTML, with a proper document structure, semantic headings, and organized sections. The final code will be committed to a Git repository and uploaded to GitHub.
+
+## Solution
+
+First, I opened Visual Studio Code and created a file named `index.html` inside my project folder. I used the standard HTML5 document structure, including the `DOCTYPE`, `html`, `head`, and `body` elements.
+
+I added the page title and main heading, followed by the required sections: About Me, Education, Technical Skills, Hobbies, and Contact Information. I used semantic headings such as `h1`, `h2`, and `h3` to organize the content clearly. I used paragraphs and lists to present information in a readable format.
+
+As required, I used only HTML without CSS. After writing the code, I saved the file and opened it in a web browser to verify that all sections appeared correctly.
+
+Next, I opened the terminal in my project folder, initialized the Git repository if necessary, staged the final HTML file, and committed the code using Git commands. Finally, I created a GitHub repository and uploaded the project to obtain a shareable GitHub link.
+
+## 1. HTML Code
+
+Save the following code in a file named `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Introduction</title>
+</head>
+<body>
+
+    <!-- Main Heading -->
+    <header>
+        <h1>Your Name</h1>
+        <p>Student | Aspiring Web Developer</p>
+    </header>
+
+    <hr>
+
+    <!-- About Me Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Your Name. I am a student interested
+            in web development and programming. I enjoy learning
+            new technologies and improving my technical skills.
+            My goal is to create useful and user-friendly websites.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Education Section -->
+    <section>
+        <h2>Education</h2>
+        <h3>Current Education</h3>
+        <p>Qualification: Your Current Qualification</p>
+        <p>Institution: Your School or College Name</p>
+        <p>Year: 2026</p>
+    </section>
+
+    <hr>
+
+    <!-- Technical Skills Section -->
+    <section>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML - Creating webpage structure</li>
+            <li>CSS - Understanding webpage styling</li>
+            <li>JavaScript - Learning web interactivity</li>
+            <li>Git - Version control and code management</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Hobbies Section -->
+    <section>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Reading books</li>
+            <li>Listening to music</li>
+            <li>Learning new technologies</li>
+            <li>Exploring computers and the internet</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Contact Information Section -->
+    <section>
+        <h2>Contact Information</h2>
+        <p>Email: your-email@example.com</p>
+        <p>Phone: Your Phone Number</p>
+        <p>Location: Your City</p>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+**Note:** Replace `Your Name`, your qualification, institution, email address, phone number, and city with your own information before submitting.
+
+## 2. Run the Webpage
+
+1. Open Visual Studio Code.
+2. Open the project folder.
+3. Open `index.html`.
+4. Save the file using `Ctrl + S`.
+5. Right-click the file and select **Open with Live Server**, or open the file directly in a web browser.
+6. Verify that all six required sections are displayed correctly.
+
+## 3. Commit the Code to Git
+
+Open the terminal in your project folder and run the following commands:
+
+```bash
+git init
+git add index.html
+git commit -m "Create personal introduction webpage"
+```
+
+If Git has not been configured on your computer, set your username and email first:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+If the folder is already a Git repository, you do not need to run `git init` again.
+
+To verify the commit, run:
+
+```bash
+git status
+git log --oneline
+```
+
+## 4. Upload the Project to GitHub
+
+1. Visit https://github.com/ and sign in to your account.
+2. Click the **New repository** option.
+3. Enter a repository name, such as `html-foundations-mini-project`.
+4. Select Public if you want your instructor to access the project through a link.
+5. Create the repository.
+6. Follow the instructions displayed by GitHub to connect your local repository and push your code.
+
+For a new, empty GitHub repository, the commands will generally look like this:
+
+```bash
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/html-foundations-mini-project.git
+git push -u origin main
+```
+
+Replace `YOUR-USERNAME` with your actual GitHub username. If an `origin` remote already exists, update it instead of adding it again.
+
+Your GitHub repository link will look like this:
+
+`https://github.com/YOUR-USERNAME/html-foundations-mini-project`
+
+## Result
+
+A complete personal introduction webpage was created using only HTML. The webpage contains a title, main heading, About Me, Education, Technical Skills, Hobbies, and Contact Information sections. The HTML file was saved as `index.html`, committed to a Git repository, and prepared for upload to GitHub.
+
+## Conclusion
+
+This assignment helped me understand the fundamentals of HTML and how to create a structured personal webpage. I learned to use semantic headings, sections, lists, paragraphs, and the standard HTML document structure. I also practiced using Git for version control and GitHub for hosting and sharing my project.
+
+## Submission
+
+1. The completed `index.html` file.
+2. A screenshot of the webpage running in a browser.
+3. A screenshot of the Git commit history.
+4. The GitHub repository link.

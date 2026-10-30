@@ -1,0 +1,130 @@
+# Assignment 2.2 — Personal Introduction Page
+
+## Objective
+To create a resume-style personal introduction webpage using HTML headings, paragraphs, line breaks, horizontal separators, text formatting, and container elements.
+
+## Solution
+
+First, I created a file named `index.html` in Visual Studio Code. I used HTML elements to design a personal introduction webpage similar to a simple resume.
+
+I added my name as the main heading using the `h1` element and created an About Me section with an introduction paragraph using the `p` element. I also created separate sections for education, skills, and hobbies using appropriate headings.
+
+I used heading elements from `h1` to `h6` to organize the content according to its importance. I used the `br` element for line breaks and the `hr` element to separate different sections. I applied `strong` to highlight important information, `em` and `i` to emphasize text, and used `div` elements to group related content. I also used `span` to highlight specific inline text.
+
+Finally, I saved the HTML file and opened it in a web browser to verify that the personal introduction webpage displayed correctly.
+
+## HTML Code
+
+Save the following code as `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Introduction</title>
+</head>
+<body>
+
+    <!-- Main heading -->
+    <div>
+        <h1>Your Name</h1>
+        <p><strong>Student | Aspiring Web Developer</strong></p>
+        <p>Email: your-email@example.com</p>
+    </div>
+
+    <hr>
+
+    <!-- About Me section -->
+    <div>
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is <span>Your Name</span>.
+            I am a student who is interested in learning
+            <em>web development</em> and programming.
+            I enjoy learning new technologies and improving my skills.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Education section -->
+    <div>
+        <h2>Education</h2>
+        <h3>Current Education</h3>
+        <p>
+            I am currently pursuing my studies.<br>
+            Institution: Your School or College Name<br>
+            Qualification: Your Current Qualification
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Skills section -->
+    <div>
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <p>
+            <strong>HTML</strong> - Basic webpage structure<br>
+            <strong>CSS</strong> - Basic webpage styling<br>
+            <strong>JavaScript</strong> - Basic interactivity
+        </p>
+
+        <h4>Personal Skills</h4>
+        <p>Communication, teamwork, and problem-solving.</p>
+    </div>
+
+    <hr>
+
+    <!-- Hobbies section -->
+    <div>
+        <h2>Hobbies</h2>
+        <p>
+            My hobbies include reading books, listening to music,
+            learning new skills, and exploring technology.
+        </p>
+        <p><i>I believe that learning is a continuous process.</i></p>
+    </div>
+
+    <hr>
+
+    <!-- Career objective section -->
+    <div>
+        <h2>Career Objective</h2>
+        <h5>My Goal</h5>
+        <p>
+            My goal is to become a skilled web developer and
+            create useful and user-friendly websites.
+        </p>
+
+        <h6>Personal Motto</h6>
+        <p><em>Keep learning and keep growing.</em></p>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <div>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
+```
+
+**Note:** Replace `Your Name`, the email address, institution name, and qualification with your own details before submitting.
+
+## Result
+
+The personal introduction webpage was created successfully. It contains a main heading with my name, an About Me section, education details, skills, hobbies, and a career objective. Different HTML elements were used to organize and format the content.
+
+## Conclusion
+
+This assignment helped me understand how to create a resume-style webpage using HTML. I learned to use heading elements, paragraphs, line breaks, horizontal separators, text formatting elements, and `div` and `span` elements to organize and present personal information.
+
+## Submission
+
+1. The `index.html` file containing the HTML code.
+2. A screenshot of the personal introduction webpage opened in a web browser.

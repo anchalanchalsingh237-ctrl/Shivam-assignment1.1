@@ -1,0 +1,118 @@
+# Assignment 2.3 — Div, Attributes & Clean Structure
+
+## Objective
+To organize a personal introduction webpage into structured sections using `div` containers, unique `id` attributes, reusable `class` attributes, and custom `data-*` attributes.
+
+## Solution
+
+First, I opened the previous personal introduction webpage in Visual Studio Code. I updated the HTML code to make it clean, readable, and well-structured.
+
+I divided the webpage into five main sections: Header, About, Education, Skills, and Contact. I used `div` elements to group related content into separate containers.
+
+I assigned unique `id` attributes to the main sections so that each section could be identified individually. I also used reusable `class` attributes to apply common styles to multiple elements. Additionally, I added a custom `data-*` attribute to store extra information in an HTML element.
+
+I updated the text in the About section and added new content to the Education, Skills, and Contact sections. Finally, I maintained proper indentation and used meaningful names for IDs and classes to make the code easy to understand and maintain.
+
+## HTML Code
+
+Save the following code as `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Introduction</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header" class="section">
+        <h1>Your Name</h1>
+        <p class="subtitle">Student and Aspiring Web Developer</p>
+    </div>
+
+    <hr>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Your Name. I am a student interested
+            in web development and programming. I enjoy learning
+            new technologies and developing my technical skills.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Education Section -->
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <div class="content-box">
+            <h3>My Academic Background</h3>
+            <p>Qualification: Your Current Qualification</p>
+            <p>Institution: Your School or College Name</p>
+            <p>Year: 2026</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="content-box">
+            <p class="skill-item">HTML - Creating webpage structure</p>
+            <p class="skill-item">CSS - Styling webpages</p>
+            <p class="skill-item">JavaScript - Adding interactivity</p>
+            <p class="skill-item">Communication and teamwork</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section"
+         data-section-type="contact-information">
+        <h2>Contact Me</h2>
+        <p>Email: your-email@example.com</p>
+        <p>Phone: Your Phone Number</p>
+        <p>Location: Your City</p>
+    </div>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <div id="footer" class="section">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
+```
+
+**Note:** Replace `Your Name`, your email address, phone number, institution name, qualification, and city with your own details.
+
+## Explanation of HTML Attributes
+
+1. **`id` attribute:** Gives a unique name to an element, such as `id="about"` or `id="skills"`.
+2. **`class` attribute:** Groups elements that can share the same styling or behavior, such as `class="section"` and `class="content-box"`.
+3. **`data-*` attribute:** Stores custom information on an HTML element. In this assignment, `data-section-type="contact-information"` identifies the purpose of the Contact section.
+4. **`div` element:** Groups related HTML elements into separate containers.
+5. **HTML comments:** Describe each section and make the code easier to understand.
+
+## Result
+
+The personal introduction webpage was successfully reorganized into five main sections: Header, About, Education, Skills, and Contact. Unique IDs, reusable classes, and a custom data attribute were added. The text was updated, new content was included, and the HTML code was organized with proper indentation.
+
+## Conclusion
+
+This assignment helped me understand how to structure an HTML webpage using `div` containers and attributes. I learned the difference between `id`, `class`, and `data-*` attributes and how proper indentation and meaningful names improve code readability and maintainability.
+
+## Submission
+
+1. The updated `index.html` file.
+2. A screenshot of the webpage opened in a browser.
+3. A screenshot of the HTML code in Visual Studio Code showing the five sections and their attributes.
